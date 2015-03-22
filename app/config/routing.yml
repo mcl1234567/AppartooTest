@@ -9,6 +9,7 @@ acme_user:
 fos_user:
     resource: "@AcmeUserBundle/Resources/config/routing.yml"
 
+# La route site.com/ dirige le traitement vers le controleur du bundle Accueil : Default, vers la fonction indexAction
 accueil:
     path: /
     defaults: { _controller: AcmeAccueilBundle:Default:index }

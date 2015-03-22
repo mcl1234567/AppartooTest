@@ -1,3 +1,4 @@
+# La route site.com/accueil dirige le traitement vers le controleur du bundle Accueil : Default, vers la fonction indexAction
 acme_accueil:
     path:     /accueil
     defaults: { _controller: AcmeAccueilBundle:Default:index }

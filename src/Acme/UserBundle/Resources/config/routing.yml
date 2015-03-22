@@ -1,4 +1,4 @@
-# app/config/routing.yml
+# Routes prédéfinies par le plugin FOS user
 fos_user_security:
     resource: "@AcmeUserBundle/Resources/config/routing/security.xml"
 
@@ -18,32 +18,37 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
-#
+# La route site.com/profil dirige le traitement vers le controleur du bundle User : Gestion, vers la fonction profilAction
 profil_user:
     path:     /profil
     defaults: { _controller: AcmeUserBundle:Gestion:profil }
 
+# La route site.com/profil-modified dirige le traitement vers le controleur du bundle User : Gestion, vers la fonction profilModifiedAction
 profil_modified:
     path:     /profil-modified
     defaults: { _controller: AcmeUserBundle:Gestion:profilModified }
 
-#
+# La route site.com/carnet dirige le traitement vers le controleur du bundle User : Gestion, vers la fonction carnetAction
 carnet_user:
     path:     /carnet
     defaults: { _controller: AcmeUserBundle:Gestion:carnetAffichage }
 
+# La route site.com/ajout-contact dirige le traitement vers le controleur du bundle User : Gestion, vers la fonction ajoutContactAction
 ajout_contact:
     path:     /ajout-contact
     defaults: { _controller: AcmeUserBundle:Gestion:ajoutContact }
 
+# La route site.com/nouveau-contact dirige le traitement vers le controleur du bundle User : Gestion, vers la fonction nouveauContactAction
 nouveau_contact:
     path:     /nouveau-contact
     defaults: { _controller: AcmeUserBundle:Gestion:nouveauContact }
 
+# La route site.com/supprimer-contact dirige le traitement vers le controleur du bundle User : Gestion, vers la fonction supprimerContactAction
 supprimer_contact:
     path:     /supprimer-contact
     defaults: { _controller: AcmeUserBundle:Gestion:supprimerContact }
 
+# La route site.com/suppression-contact dirige le traitement vers le controleur du bundle User : Gestion, vers la fonction suppressionContactAction
 suppression_contact:
     path:     /suppression-contact
     defaults: { _controller: AcmeUserBundle:Gestion:suppressionContact }
