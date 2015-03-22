@@ -19,7 +19,7 @@ J'ai créé 2 Bundles:
       Registration ( fos_user : redéfini )
 <br /> <br />
 Pour les templates : <br />
-J'ai repris les 3 templates de fos_user, et j'ai ajouté des héritage à une template base dans le dossier app/Resources/views. <br />
+J'ai repris les 3 templates de fos_user : register, layout, login <br />et j'ai ajouté des héritage à une template base dans le dossier app/Resources/views. <br /> <br />
 J'ai créé 5 templates pour gérer le profil et le carnet. <br />
 J'ai créé 1 template pour gérer l'accueil. <br />
 J'ai créé 2 templates génériques : <br />
