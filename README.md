@@ -17,7 +17,7 @@ J'ai créé 2 Bundles:
       Gestion : Gère le profil, et le carnet<br />
       Security ( fos_user : redéfini )<br />
       Registration ( fos_user : redéfini )
-<br />
+<br /> <br />
 Pour les templates : <br />
 J'ai repris les 3 templates de fos_user, et j'ai ajouté un héritage à une template nav et base dans le dossier app/Resources. <br />
 J'ai créé 5 templates pour gérer le profil et le carnet. <br />
