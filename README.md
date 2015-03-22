@@ -30,3 +30,8 @@ Pour les templates : <br />
 
 Pour administrer la base de données :  <br />
 https://github.com/morvancalmel/AppartooTest/blob/master/app/config/parameters.yml
+
+J'ai également créé 3 entities qui synchronise Symfony et les tables de la base de données en MySQL :
+* User
+* Profil
+* Carnet
