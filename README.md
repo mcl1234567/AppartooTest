@@ -10,8 +10,8 @@ J'explique les différentes fonctions et lignes de code avec des commentaires. <
 
 J'ai créé 2 Bundles:
 - Accueil
-- User :
-    3 Controller :
+- User : <br />
+    3 Controller : <br />
       Gestion : Gère le profil, et le carnet
       Security ( fos_user : redéfini )
       Registration ( fos_user : redéfini )
