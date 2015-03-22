@@ -27,3 +27,6 @@ Pour les templates : <br />
 * J'ai créé 2 templates génériques dans app/Resources/views : <br />
     * nav : Pour la barre de navigation / login <br />
     * base : Pour le bloc head + le bloc footer + scripts de base
+
+Pour administrer la base de données :  <br />
+https://github.com/morvancalmel/AppartooTest/blob/master/app/config/parameters.yml
