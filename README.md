@@ -13,10 +13,10 @@ J'ai créé 2 Bundles:
     1 Controller : <br />
         Default : Pour afficher l'accueil<br />
 - User : <br />
-    3 Controller : <br />
-      Gestion : Gère le profil, et le carnet<br />
-      Security ( fos_user : redéfini )<br />
-      Registration ( fos_user : redéfini )
+    3 Controllers : <br />
+      - Gestion : Gère le profil, et le carnet<br />
+      - Security ( fos_user : redéfini )<br />
+      - Registration ( fos_user : redéfini )
 <br /> <br />
 Pour les templates : <br />
 J'ai repris les 3 templates de fos_user : register, layout, login <br />et j'ai ajouté des héritage à une template base dans le dossier app/Resources/views. <br /> <br />
