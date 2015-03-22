@@ -1,0 +1,45 @@
+<!-- Template nav : Barre de navigation + module de connexion / inscription -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display
+    ==========================================-->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ path('acme_accueil') }}">Appartoo</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+
+      <!-- Nom utilisateur et menu
+      ==========================================-->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          {% if is_granted("ROLE_USER") %}
+            > {{app.user.username}}
+          {% else %}
+            > Anonyme
+          {% endif %}
+          <span class="caret"></span>
+        </a>
+
+        <!-- Menu utilisateur connecté
+        ==========================================-->
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="{{ path('acme_accueil') }}">Accueil</a></li>
+          {% if is_granted("ROLE_USER") %}
+            <li><a href="{{ path('profil_user') }}">Profil</a></li>
+            <li><a href="{{ path('carnet_user') }}">Carnet</a></li>
+            <li><a href="{{ path('fos_user_security_logout') }}">Se déconnecter</a></li>
+
+        <!-- Menu utilisateur NON connecté
+        ==========================================-->
+          {% else %}
+            <!-- Button trigger modal -->
+            <li><a data-toggle="modal" data-target="#myLoginModal">Se connecter</a></li>
+            <li><a href="register">S'inscrire</a></li>
+          {% endif %}
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.container -->
+</nav>

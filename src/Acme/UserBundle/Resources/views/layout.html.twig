@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Page d'accueil{% endblock %}
+
+{% block body %}
+<!-- Redéclaration du bloc body -->
+
+  <div style="margin: auto; width: 700px;">
+    <h3 class="h3_mc">{{ libelle }}</h3>
+    <br />
+  </div>
+
+  <!-- Login FOSUser pop up
+  ========================================================== -->
+  <div style="margin: auto; width: 500px;">
+      {% for type, messages in app.session.flashBag.all %}
+          {% for message in messages %}
+              <div class="{{ type }}">
+                  {{ message|trans({}, 'FOSUserBundle') }}
+              </div>
+          {% endfor %}
+      {% endfor %}
+
+      <!-- Redéclaration du bloc fos_user_content -->
+      {% block fos_user_content %}{% endblock fos_user_content %}
+  </div>
+
+<!-- fin body -->
+{% endblock %}

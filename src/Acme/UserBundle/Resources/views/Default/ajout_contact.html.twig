@@ -1,0 +1,28 @@
+{% extends 'AcmeUserBundle::layout.html.twig' %}
+
+{% block title %}Carnet d'adresses{% endblock %}
+
+{% block body %}
+<!-- Redéclaration du bloc body -->
+
+  <div style="margin: auto; width: 700px;">
+
+    <!-- Affichage de la variable libelle -->
+    <h3 class="h3_mc">{{ libelle }}</h3><br />
+
+    <form action="nouveau-contact" method="post">
+      <input id="id" type="hidden" name="id" value="{{app.user.id}}" /> <br />
+
+      <label for="email">Entrer un nom de l'utilisateur (inscrit sur le site) :</label>
+      <input id="nom" type="text" name="nom"  /> <br /> <br />
+
+      <input type="submit" value="Ajouter" /> <br /> <br />
+    </form>
+
+    <!-- Lien contenant le nom d'une route -->
+    <a href="{{ path('carnet_user') }}" >Retour au carnet d'adresse</a>
+
+  </div>
+
+<!-- fin body -->
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'AcmeUserBundle::layout.html.twig' %}
+
+{% block title %}Carnet d'adresses{% endblock %}
+
+{% block body %}
+<!-- Redéclaration du bloc body -->
+
+  <div style="margin: auto; width: 700px;">
+
+    <!-- Affichage de la variable libelle -->
+    <h3 class="h3_mc">{{ libelle }}</h3>
+    <br />
+
+    <!-- Affichage de la variable message -->
+    {{message}}
+
+    <br /> <br />
+
+    <!-- Lien contenant le nom d'une route -->
+    <a href="{{ path('carnet_user') }}">Retour au carnet</a>
+
+  </div>
+
+<!-- fin body -->
+{% endblock %}

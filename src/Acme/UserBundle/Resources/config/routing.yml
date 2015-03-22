@@ -1,0 +1,49 @@
+# app/config/routing.yml
+fos_user_security:
+    resource: "@AcmeUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@AcmeUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+#
+profil_user:
+    path:     /profil
+    defaults: { _controller: AcmeUserBundle:Gestion:profil }
+
+profil_modified:
+    path:     /profil-modified
+    defaults: { _controller: AcmeUserBundle:Gestion:profilModified }
+
+#
+carnet_user:
+    path:     /carnet
+    defaults: { _controller: AcmeUserBundle:Gestion:carnetAffichage }
+
+ajout_contact:
+    path:     /ajout-contact
+    defaults: { _controller: AcmeUserBundle:Gestion:ajoutContact }
+
+nouveau_contact:
+    path:     /nouveau-contact
+    defaults: { _controller: AcmeUserBundle:Gestion:nouveauContact }
+
+supprimer_contact:
+    path:     /supprimer-contact
+    defaults: { _controller: AcmeUserBundle:Gestion:supprimerContact }
+
+suppression_contact:
+    path:     /suppression-contact
+    defaults: { _controller: AcmeUserBundle:Gestion:suppressionContact }

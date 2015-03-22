@@ -1,0 +1,30 @@
+{% extends 'AcmeUserBundle::layout.html.twig' %}
+
+{% block title %}Carnet d'adresses{% endblock %}
+
+{% block body %}
+<!-- Redéclaration du bloc body -->
+
+  <div style="margin: auto; width: 700px;">
+
+    <!-- Affichage de la variable libelle -->
+    <h3 class="h3_mc">{{ libelle }}</h3><br />
+
+      <!-- Lister tous les contacts de l'utilisateur -->
+      {% for contact in contacts %}
+          Nom du contact : {{ contact.username }} <br />
+          Email du contact : {{ contact.email }} <br /> <br />
+      {% endfor %}
+
+      <!-- Lien contenant le nom d'une route -->
+      <a href="{{ path('ajout_contact') }}" >Ajouter un contact</a>
+      <br />
+
+      <!-- Lien contenant le nom d'une route -->
+      <a href="{{ path('supprimer_contact') }}" >Supprimer un contact</a>
+
+    </form>
+  </div>
+
+<!-- fin body -->
+{% endblock %}
