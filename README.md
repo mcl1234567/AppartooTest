@@ -9,7 +9,9 @@ Pour accéder à la page de login : Cliquer sur "Anonyme", dans la barre du haut
 J'explique les différentes fonctions et lignes de code avec des commentaires. <br />
 
 J'ai créé 2 Bundles:
-- Accueil
+- Accueil:<br />
+    1 Controller : <br />
+        Default : Pour afficher l'accueil<br />
 - User : <br />
     3 Controller : <br />
       Gestion : Gère le profil, et le carnet<br />
