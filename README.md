@@ -12,6 +12,6 @@ J'ai créé 2 Bundles:
 - Accueil
 - User : <br />
     3 Controller : <br />
-      Gestion : Gère le profil, et le carnet
-      Security ( fos_user : redéfini )
+      Gestion : Gère le profil, et le carnet<br />
+      Security ( fos_user : redéfini )<br />
       Registration ( fos_user : redéfini )
